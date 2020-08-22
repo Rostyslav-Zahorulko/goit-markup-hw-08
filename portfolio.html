@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфолио</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.7.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <!-- Шапка сайту -->
+    <!-- В макеті названа верхньою лінією -->
+    <header class="header portfolio-header">
+      <div class="container">
+        <!-- Навігаційне меню сайту-->
+        <nav class="navigation-menu">
+          <!-- Логотип веб студії, який є посиланням на головну сторінку сайту -->
+          <a class="logo link" href="./index.html" lang="en"
+            >Web <span class="logo-second-part">Studio</span></a
+          >
+          <!-- Список посилань на сторінки сайту -->
+          <ul class="navigation-list list">
+            <!-- Посилання на головну сторінку -->
+            <li class="navigation-list-item">
+              <a class="navigation-list-item-link link" href="./index.html"
+                >Студия</a
+              >
+            </li>
+            <!-- Посилання на сторінку "Портфолио" -->
+            <li class="navigation-list-item">
+              <a
+                class="navigation-list-item-link current link"
+                href="./portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <!-- Посилання на сторінку "Контакты" -->
+            <li class="navigation-list-item">
+              <a class="navigation-list-item-link link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Список контактних даних веб студії -->
+        <ul class="contacts-list list">
+          <!-- Електронна пошта -->
+          <li class="contacts-list-item">
+            <a
+              class="contacts-list-item-link link"
+              href="mailto:info@devstudio.com"
+              aria-label="Электронная почта"
+            >
+              <svg class="icon-envelope" width="16" height="11.2">
+                <use href="./images/sprite.svg#envelope-icon"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <!-- Мобільний телефон -->
+          <li class="contacts-list-item">
+            <a
+              class="contacts-list-item-link link"
+              href="tel:+380961111111"
+              aria-label="Мобильный телефон"
+            >
+              <svg class="icon-smartphone" width="10" height="14.94">
+                <use href="./images/sprite.svg#smartphone-icon"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- Оригінальний вміст сторінки "Портфолио" -->
+    <main>
+      <section class="works-section">
+        <div class="container">
+          <h1 class="works-section-title" hidden>Примеры наших работ</h1>
+          <!-- Список фільтрувальних кнопок -->
+          <ul class="filter-buttons-list list">
+            <!-- Кнопка  1 -->
+            <li class="filter-buttons-list-item">
+              <button class="filter-button button" type="button">Все</button>
+            </li>
+            <!-- Кнопка 2 -->
+            <li class="filter-buttons-list-item">
+              <button class="filter-button button" type="button">
+                Веб-сайты
+              </button>
+            </li>
+            <!-- Кнопка 3 -->
+            <li class="filter-buttons-list-item">
+              <button class="filter-button button" type="button">
+                Приложения
+              </button>
+            </li>
+            <!-- Кнопка 4 -->
+            <li class="filter-buttons-list-item">
+              <button class="filter-button button" type="button">Дизайн</button>
+            </li>
+            <!-- Кнопка 5 -->
+            <li class="filter-buttons-list-item">
+              <button class="filter-button button" type="button">
+                Маркетинг
+              </button>
+            </li>
+          </ul>
+          <!-- Список прикладів робіт веб студії -->
+          <ul class="works-list list">
+            <!-- Робота 1 -->
+            <li class="works-list-item">
+              <a class="works-list-item-link link" href="">
+                <div class="work-image-wrapper">
+                  <img
+                    class="works-list-item-link-image"
+                    src="./images/portfolio/technocrack-website.jpg"
+                    alt="Ноутбук"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="works-list-item-link-description">
+                    Технокряк это современная площадка распространения
+                    коронавируса. Компании используют эту платформу для
+                    цифрового шпионажа и атак на защищённые сервера конкурентов.
+                  </p>
+                </div>
+                <div class="works-list-item-link-information">
+                  <h2 class="works-list-item-link-title">Технокряк</h2>
+                  <p class="works-list-item-link-definition">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <!-- Робота 2 -->
+            <li class="works-list-item">
+              <a class="works-list-item-link link" href="">
+                <div class="work-image-wrapper">
+                  <img
+                    class="works-list-item-link-image"
+                    src="./images/portfolio/basketball-game-poster.jpg"
+                    alt="Мужчины играют в баскетбол"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="works-list-item-link-description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Fuga temporibus, consectetur quia rem odit neque dolore
+                    inventore aliquid eligendi nostrum ut, ea blanditiis, vero
+                    quam?
+                  </p>
+                </div>
+                <div class="works-list-item-link-information">
+                  <h2 class="works-list-item-link-title">
+                    Постер <span lang="en">New Orlean vs Golden Star</span>
+                  </h2>
+                  <p class="works-list-item-link-definition">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <!-- Робота 3 -->
+            <li class="works-list-item">
+              <a class="works-list-item-link link" href="">
+                <div class="work-image-wrapper">
+                  <img
+                    class="works-list-item-link-image"
+                    src="./images/portfolio/seafood-restaurant-application.jpg"
+                    alt="Название ресторана на фоне рыбы"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="works-list-item-link-description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Fuga temporibus, consectetur quia rem odit neque dolore
+                    inventore aliquid eligendi nostrum ut, ea blanditiis, vero
+                    quam?
+                  </p>
+                </div>
+                <div class="works-list-item-link-information">
+                  <h2 class="works-list-item-link-title">
+                    Ресторан <span lang="en">Seafood</span>
+                  </h2>
+                  <p class="works-list-item-link-definition">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <!-- Робота 4 -->
+            <li class="works-list-item">
+              <a class="works-list-item-link link" href="">
+                <div class="work-image-wrapper">
+                  <img
+                    class="works-list-item-link-image"
+                    src="./images/portfolio/prime-project-marketing.jpg"
+                    alt="Наушники с мягкими амбушюрами"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="works-list-item-link-description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Fuga temporibus, consectetur quia rem odit neque dolore
+                    inventore aliquid eligendi nostrum ut, ea blanditiis, vero
+                    quam?
+                  </p>
+                </div>
+                <div class="works-list-item-link-information">
+                  <h2 class="works-list-item-link-title">
+                    Проект <span lang="en">Prime</span>
+                  </h2>
+                  <p class="works-list-item-link-definition">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <!-- Робота 5 -->
+            <li class="works-list-item">
+              <a class="works-list-item-link link" href="">
+                <div class="work-image-wrapper">
+                  <img
+                    class="works-list-item-link-image"
+                    src="./images/portfolio/boxes-project-application.jpg"
+                    alt="Две коробки"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="works-list-item-link-description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Fuga temporibus, consectetur quia rem odit neque dolore
+                    inventore aliquid eligendi nostrum ut, ea blanditiis, vero
+                    quam?
+                  </p>
+                </div>
+                <div class="works-list-item-link-information">
+                  <h2 class="works-list-item-link-title">
+                    Проект <span lang="en">Boxes</span>
+                  </h2>
+                  <p class="works-list-item-link-definition">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <!-- Робота 6 -->
+            <li class="works-list-item">
+              <a class="works-list-item-link link" href="">
+                <div class="work-image-wrapper">
+                  <img
+                    class="works-list-item-link-image"
+                    src="./images/portfolio/inspirations-has-no-borders-website.jpg"
+                    alt="Монитор"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="works-list-item-link-description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Fuga temporibus, consectetur quia rem odit neque dolore
+                    inventore aliquid eligendi nostrum ut, ea blanditiis, vero
+                    quam?
+                  </p>
+                </div>
+                <div class="works-list-item-link-information">
+                  <h2 class="works-list-item-link-title" lang="en">
+                    Inspiration has no Borders
+                  </h2>
+                  <p class="works-list-item-link-definition">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <!-- Робота 7 -->
+            <li class="works-list-item">
+              <a class="works-list-item-link link" href="">
+                <div class="work-image-wrapper">
+                  <img
+                    class="works-list-item-link-image"
+                    src="./images/portfolio/limited-edition-publication-design.jpg"
+                    alt="Раскрытая книга"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="works-list-item-link-description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Fuga temporibus, consectetur quia rem odit neque dolore
+                    inventore aliquid eligendi nostrum ut, ea blanditiis, vero
+                    quam?
+                  </p>
+                </div>
+                <div class="works-list-item-link-information">
+                  <h2 class="works-list-item-link-title">
+                    Издание <span lang="en">Limited Edition</span>
+                  </h2>
+                  <p class="works-list-item-link-definition">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <!-- Робота 8 -->
+            <li class="works-list-item">
+              <a class="works-list-item-link link" href="">
+                <div class="work-image-wrapper">
+                  <img
+                    class="works-list-item-link-image"
+                    src="./images/portfolio/lab-project-marketing.jpg"
+                    alt="Этикетка"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="works-list-item-link-description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Fuga temporibus, consectetur quia rem odit neque dolore
+                    inventore aliquid eligendi nostrum ut, ea blanditiis, vero
+                    quam?
+                  </p>
+                </div>
+                <div class="works-list-item-link-information">
+                  <h2 class="works-list-item-link-title">
+                    Проект <span lang="en">LAB</span>
+                  </h2>
+                  <p class="works-list-item-link-definition">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <!-- Робота 9 -->
+            <li class="works-list-item">
+              <a class="works-list-item-link link" href="">
+                <div class="work-image-wrapper">
+                  <img
+                    class="works-list-item-link-image"
+                    src="./images/portfolio/growing-business-application.jpg"
+                    alt="Ноутбук"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="works-list-item-link-description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Fuga temporibus, consectetur quia rem odit neque dolore
+                    inventore aliquid eligendi nostrum ut, ea blanditiis, vero
+                    quam?
+                  </p>
+                </div>
+                <div class="works-list-item-link-information">
+                  <h2 class="works-list-item-link-title" lang="en">
+                    Growing Business
+                  </h2>
+                  <p class="works-list-item-link-definition">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!-- Підвал сайту -->
+    <footer class="footer">
+      <div class="container">
+        <!-- Блок-обгортка для подальшої стилізації -->
+        <div class="contacts-block">
+          <!-- Логотип веб студії, який є посиланням на головну сторінку сайту -->
+          <a class="logo link" href="./index.html" lang="en"
+            >Web <span class="logo-second-part">Studio</span></a
+          >
+          <!-- Контактні дані веб студії -->
+          <address class="address">
+            <!-- Список контактів -->
+            <ul class="contact-data-list list">
+              <!-- Фізична адреса веб студії -->
+              <li class="contact-data-list-item">
+                <a
+                  class="contact-data-list-item-link physical-address link"
+                  href="https://goo.gl/maps/4vaiXXMEc3k6XGQo9"
+                  target="_blank"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <!-- Електронна адреса веб студії -->
+              <li class="contact-data-list-item">
+                <a
+                  class="contact-data-list-item-link link"
+                  href="mailto:info@example.com"
+                  >info@example.com</a
+                >
+              </li>
+              <!-- Мобільний телефон веб студії -->
+              <li class="contact-data-list-item">
+                <a
+                  class="contact-data-list-item-link link"
+                  href="tel:+380991111111"
+                  >+38 099 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <!-- Блок-обгортка для подальшої стилізації -->
+        <div class="social-networks-block">
+          <!-- Заклик до дії -->
+          <b class="call-to-action">присоединяйтесь</b>
+          <!-- Список посилань на профілі веб студії в соціальних мережах -->
+          <ul class="studio-social-networks-pages-list list">
+            <!-- Посилання на сторінку веб студії в соціальній мережі Інстаграм -->
+            <li class="studio-social-networks-pages-list-item">
+              <a
+                class="social-networks-pages-list-item-link link"
+                href=""
+                aria-label="Ccылка на страницу веб студии в социальной сети Инстаграм"
+              >
+                <svg class="social-network-logo">
+                  <use href="./images/sprite.svg#instagram-logo"></use>
+                </svg>
+              </a>
+            </li>
+            <!-- Посилання на сторінку веб студії в соціальній мережі Твіттер -->
+            <li class="studio-social-networks-pages-list-item">
+              <a
+                class="social-networks-pages-list-item-link link"
+                href=""
+                aria-label="Ccылка на страницу веб студии в социальной сети Твиттер"
+              >
+                <svg class="social-network-logo">
+                  <use href="./images/sprite.svg#twitter-logo"></use>
+                </svg>
+              </a>
+            </li>
+            <!-- Посилання на сторінку веб студії в соціальній мережі Фейсбук -->
+            <li class="studio-social-networks-pages-list-item">
+              <a
+                class="social-networks-pages-list-item-link link"
+                href=""
+                aria-label="Ccылка на страницу веб студии в социальной сети Фейсбук"
+              >
+                <svg class="social-network-logo">
+                  <use href="./images/sprite.svg#facebook-logo"></use>
+                </svg>
+              </a>
+            </li>
+            <!-- Посилання на сторінку веб студії в соціальній мережі Лінкедін -->
+            <li class="studio-social-networks-pages-list-item">
+              <a
+                class="social-networks-pages-list-item-link link"
+                href=""
+                aria-label="Ccылка на страницу веб студии в социальной сети Линкедин"
+              >
+                <svg class="social-network-logo">
+                  <use href="./images/sprite.svg#linkedin-logo"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Блок-обгортка для подальшої стилізації -->
+        <div class="subscribe-form-block">
+          <!-- Заклик до дії -->
+          <b class="call-to-action">подпишитесь на рассылку</b>
+          <form class="subscribe-form">
+            <input
+              class="subscribe-form-input"
+              type="email"
+              name="mail"
+              placeholder="E-mail"
+              required
+            />
+            <button class="primary-button button" type="submit">
+              Подписаться
+              <svg
+                class="subscribe-form-primary-button-icon"
+                width="24"
+                height="24"
+              >
+                <use href="./images/sprite.svg#plane-icon"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <b class="modal-call">Оставьте свои данные, мы вам перезвоним</b>
+            <form class="feedback-form">
+              <div class="feedback-form-field">
+                <input
+                  class="feedback-form-field-input"
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder=" "
+                  required
+                />
+                <label class="feedback-form-field-label" for="name">Имя</label>
+                <svg class="feedback-form-field-icon">
+                  <use href="./images/sprite.svg#icon-name"></use>
+                </svg>
+              </div>
+              <div class="feedback-form-field">
+                <input
+                  class="feedback-form-field-input"
+                  type="tel"
+                  name="tel"
+                  id="tel"
+                  placeholder=" "
+                  required
+                />
+                <label class="feedback-form-field-label" for="tel"
+                  >Телефон</label
+                >
+                <svg class="feedback-form-field-icon">
+                  <use href="./images/sprite.svg#icon-phone"></use>
+                </svg>
+              </div>
+              <div class="feedback-form-field">
+                <input
+                  class="feedback-form-field-input"
+                  type="email"
+                  name="mail"
+                  id="mail"
+                  placeholder=" "
+                  required
+                />
+                <label class="feedback-form-field-label" for="mail"
+                  >Почта</label
+                >
+                <svg class="feedback-form-field-icon">
+                  <use href="./images/sprite.svg#icon-email"></use>
+                </svg>
+              </div>
+              <div class="feedback-form-field textarea">
+                <textarea
+                  class="feedback-form-field-textarea"
+                  name="comment"
+                  id="comment"
+                  placeholder=" "
+                ></textarea>
+                <label class="feedback-form-field-label" for="comment"
+                  >Комментарий</label
+                >
+              </div>
+              <div class="feedback-form-field checkbox">
+                <input
+                  class="feedback-form-field-checkbox"
+                  type="checkbox"
+                  name="check"
+                  value="Подтверждаю"
+                  id="check"
+                  required
+                />
+                <label class="feedback-form-field-label" for="check">
+                  <span class="feedback-form-field-label-text"
+                    >Соглашаюсь с рассылкой и принимаю </span
+                  ><a class="feedback-form-field-label-link" href=""
+                    >Условия договора</a
+                  >
+                </label>
+              </div>
+              <button class="primary-button button" type="submit">
+                Отправить
+              </button>
+            </form>
+            <button class="modal-close-button" type="button" data-modal-close>
+              <svg class="modal-close-button-icon">
+                <use href="./images/sprite.svg#icon-close"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,101 @@
+.header {
+  &.portfolio-header {
+    border-bottom: 1px solid #ececec;
+  }
+}
+
+.header {
+  > .container {
+    display: flex;
+  }
+}
+
+.header {
+  .logo {
+    margin-right: 85px;
+  }
+}
+
+.navigation-menu {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-list {
+  @extend %header-list;
+}
+
+.navigation-list-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.navigation-list-item-link {
+  @extend %header-link;
+  display: block;
+
+  color: $primary-text-color;
+
+  &.current {
+    padding-bottom: 0;
+    color: $accent-color;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.navigation-list-item-link.current::after {
+  content: '';
+  display: block;
+  height: 4px;
+  border-radius: 2px;
+  margin-top: 28px;
+
+  background: $accent-color;
+}
+
+.contacts-list {
+  @extend %header-list;
+  margin-left: auto;
+}
+
+.contacts-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.contacts-list-item-link {
+  @extend %header-link;
+  display: inline-flex;
+  align-items: center;
+
+  color: $secondary-text-color;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.icon-envelope {
+  @extend %header-icon;
+  width: 16px;
+  height: 11.2px;
+
+  .contacts-list-item-link:hover &,
+  .contacts-list-item-link:focus & {
+    fill: $accent-color;
+  }
+}
+
+.icon-smartphone {
+  @extend %header-icon;
+  width: 10px;
+  height: 14.94px;
+
+  .contacts-list-item-link:hover &,
+  .contacts-list-item-link:focus & {
+    fill: $accent-color;
+  }
+}

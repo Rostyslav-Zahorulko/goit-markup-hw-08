@@ -1,0 +1,38 @@
+.services-section {
+  padding-top: 47px;
+}
+
+.services-list {
+  display: flex;
+}
+
+.services-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.services-list-item-container {
+  position: relative;
+}
+
+.services-list-item-container-image {
+  display: block;
+}
+
+.services-list-item-container-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1429;
+  text-align: center;
+  text-transform: uppercase;
+  color: $tertiary-text-color;
+  background-color: rgba(47, 48, 58, 0.8);
+}

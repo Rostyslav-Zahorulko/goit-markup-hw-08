@@ -1,0 +1,32 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: $primary-font-family;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: $primary-text-color;
+  background-color: $primary-background-color;
+}
+
+.button {
+  border-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+
+  list-style-type: none;
+}

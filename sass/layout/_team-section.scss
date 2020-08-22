@@ -1,0 +1,46 @@
+.team-section {
+  background-color: #f5f4fa;
+}
+
+.team-list {
+  display: flex;
+}
+
+.team-list-item {
+  background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.team-list-item-image {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.team-list-item-title {
+  @extend %team-section-card-text;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.team-list-item-description {
+  @extend %team-section-card-text;
+  margin-bottom: 16px;
+  font-weight: 400;
+  color: $secondary-text-color;
+}
+
+.worker-social-networks-pages-list {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 24px;
+}
+
+.worker-social-networks-pages-list-item:not(:last-child) {
+  margin-right: 10px;
+}

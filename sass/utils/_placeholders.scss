@@ -1,0 +1,38 @@
+%header-list {
+  display: flex;
+  align-items: center;
+}
+
+%header-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  line-height: 1.1428;
+  letter-spacing: 0.02em;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+%header-icon {
+  margin-right: 10px;
+
+  fill: $secondary-text-color;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+%team-section-card-text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.1875;
+  text-align: center;
+}
+
+%modal-feedback-form-field-text {
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
