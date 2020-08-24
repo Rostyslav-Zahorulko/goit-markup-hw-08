@@ -3,7 +3,12 @@
   margin-bottom: 50px;
 
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.1667;
+  font-size: 28px;
+  line-height: 1.1786;
   text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.1667;
+  }
 }
