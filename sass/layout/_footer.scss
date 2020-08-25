@@ -8,13 +8,17 @@
 .footer {
   > .container {
     text-align: center;
-    // display: flex;
-    // align-items: baseline;
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: baseline;
+    }
   }
 }
 
 .blocks-wrapper {
-  margin-bottom: 60px;
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
 
   @media screen and (min-width: 768px) {
     display: flex;
@@ -39,16 +43,19 @@
   @media screen and (max-width: 767px) {
     margin-bottom: 60px;
   }
-  // margin-right: 69px;
-}
 
-// .address {
-//   margin-top: 20px;
-// }
+  @media screen and (min-width: 1200px) {
+    margin-right: 69px;
+    text-align: left;
+  }
+}
 
 .contact-data-list-item:not(:last-child) {
   margin-bottom: 8px;
-  // margin-bottom: 9px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
 }
 
 .contact-data-list-item-link {
@@ -63,8 +70,10 @@
 }
 
 .social-networks-block {
-  // margin-bottom: 60px;
-  // margin-right: 94px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 94px;
+    text-align: left;
+  }
 }
 
 .call-to-action {
@@ -105,26 +114,39 @@
   }
 }
 
+.subscribe-form-block {
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
+}
+
 .subscribe-form {
-  // display: flex;
-  margin: 0 auto;
-  // width: 570px;
+  @media screen and (max-width: 1199px) {
+    margin: 0 auto;
+    max-width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    width: 570px;
+  }
 }
 
 .subscribe-form-input {
-  // width: 358px;
   width: 100%;
   padding: 14px 15px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-  margin-bottom: 20px;
-  // margin-right: 12px;
 
   color: $tertiary-text-color;
   background-color: #2f303a;
 
-  @media screen and (min-width: 768px) {
-    width: 450px;
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 12px;
   }
 }
 
