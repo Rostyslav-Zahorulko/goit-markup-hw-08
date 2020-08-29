@@ -21,7 +21,7 @@
         <a class="logo link" href="./index.html" lang="en"
           >Web <span class="logo-second-part">Studio</span></a
         >
-        <div class="header-menu">
+        <div class="header-menu" id="header-menu" data-menu>
           <nav class="navigation">
             <ul class="navigation-list list">
               <li class="navigation-list-item">
@@ -68,10 +68,20 @@
             </li>
           </ul>
         </div>
-        <button class="menu-button button" type="button">
-          <svg width="40" height="40">
-            <use href="./images/sprite.svg#icon-lines"></use>
-            <use href="./images/sprite.svg#icon-cross"></use>
+        <button
+          class="menu-button button"
+          type="button"
+          aria-expanded="false"
+          aria-controls="header-menu"
+          data-menu-button
+        >
+          <svg
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного окна"
+          >
+            <use class="icon-cross" href="./images/sprite.svg#icon-cross"></use>
+            <use class="icon-lines" href="./images/sprite.svg#icon-lines"></use>
           </svg>
         </button>
       </div>
